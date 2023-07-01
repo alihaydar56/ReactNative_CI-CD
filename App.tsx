@@ -7,7 +7,8 @@
 
 import React, { useEffect } from 'react';
 import type {PropsWithChildren} from 'react';
-import * as Crashes from 'appcenter-crashes';
+import Crashes from 'appcenter-crashes';
+import Analytics from 'appcenter-analytics';
 import {
   Alert,
   Button,
@@ -43,6 +44,16 @@ function App(): JSX.Element {
     }
   }
 
+  const _ontrackTestBtnEvent=()=>{
+    Analytics.trackEvent('test_btn_click',{name:'Mr.Ali',userId:'123456'})
+    
+  }
+  const _ontrackSubmitBtnEvent=()=>{
+    Analytics.trackEvent('submit_btn_click',{name:'Mr.Micheal',userId:'12345'})
+    
+  }
+  
+
   useEffect(()=>{
     isAppCrashedPrevious();
   },[])
@@ -50,6 +61,10 @@ function App(): JSX.Element {
   return (
     <View style={{flex:1,justifyContent:'center'}}>
       <Button title='Crash' onPress={()=>Crashes.generateTestCrash()} />
+      <View style={{marginVertical:'4%'}}>
+      <Button title='Test Btn Click' onPress={_ontrackTestBtnEvent}  />
+      </View>
+      <Button title='Submit Btn' onPress={_ontrackSubmitBtnEvent} />
     </View>
   )
 }
