@@ -5,10 +5,11 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import type {PropsWithChildren} from 'react';
 import * as Crashes from 'appcenter-crashes';
 import {
+  Alert,
   Button,
   SafeAreaView,
   ScrollView,
@@ -33,6 +34,19 @@ type SectionProps = PropsWithChildren<{
 
 
 function App(): JSX.Element {
+
+  const isAppCrashedPrevious=async()=>{
+    const didCrash=await Crashes.hasCrashedInLastSession();
+    if(didCrash){
+      await Crashes.lastSessionCrashReport();
+      Alert.alert('Sorry!',"Sorry for that crash. We're working on a solution!");
+    }
+  }
+
+  useEffect(()=>{
+    isAppCrashedPrevious();
+  },[])
+
   return (
     <View style={{flex:1,justifyContent:'center'}}>
       <Button title='Crash' onPress={()=>Crashes.generateTestCrash()} />
