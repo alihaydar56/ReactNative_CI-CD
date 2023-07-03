@@ -80,5 +80,5 @@ To learn more about React Native, take a look at the following resources:
 
 
 
-Android :[![Build status](https://build.appcenter.ms/v0.1/apps/16d4c980-fb59-4519-ad59-da557b2f9cbb/branches/dev/badge)](https://appcenter.ms)
-iOS : [![Build status](https://build.appcenter.ms/v0.1/apps/e90d3b7b-5573-4b60-9713-f7ac716da94f/branches/dev/badge)](https://appcenter.ms)
+Android :[![Build status](https://build.appcenter.ms/v0.1/apps/2ac73a62-3b6b-4a4a-a9fd-bf65ab048f2b/branches/dev/badge)](https://appcenter.ms)
+iOS : [![Build status](https://build.appcenter.ms/v0.1/apps/19da8c88-0e92-43fe-a6ae-cecb46c88aee/branches/dev/badge)](https://appcenter.ms)
