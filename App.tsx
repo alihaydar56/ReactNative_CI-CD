@@ -95,14 +95,14 @@ function App(): JSX.Element {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 40,
+    marginTop: 41,
     marginHorizontal: 16
   },
   label: {
     marginTop: 10
   },
   textBox: {
-    height: 40,
+    height: 44,
     borderColor: 'gray',
     borderWidth: 1,
     marginTop: 10,
