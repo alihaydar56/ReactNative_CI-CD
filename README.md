@@ -77,3 +77,8 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+
+Android :[![Build status](https://build.appcenter.ms/v0.1/apps/2ac73a62-3b6b-4a4a-a9fd-bf65ab048f2b/branches/dev/badge)](https://appcenter.ms)
+iOS : [![Build status](https://build.appcenter.ms/v0.1/apps/19da8c88-0e92-43fe-a6ae-cecb46c88aee/branches/dev/badge)](https://appcenter.ms)
